@@ -28,6 +28,11 @@
         "curves": "",
         "dhparam": ""
     },
+    "websocket": {
+        "enabled": true,
+        "path": "/ws-qc6ydRxTQg58GbUMi7TN8yLao2",
+        "hostname": "abc.taie.cc"
+    },
     "tcp": {
         "prefer_ipv4": false,
         "no_delay": true,

@@ -4,4 +4,6 @@
 # bin/stop.sh
 #------------------------------------------------
 
-docker-compose down
+CURPATH=$(cd "$(dirname "$0")"; pwd)
+cd $CURPATH
+docker compose -f ../compose.yml down

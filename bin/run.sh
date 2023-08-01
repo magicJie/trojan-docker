@@ -3,5 +3,6 @@
 # 运行 docker 服务
 # bin/run.sh
 #------------------------------------------------
-
-docker-compose up -d
+CURPATH=$(cd "$(dirname "$0")"; pwd)
+cd $CURPATH
+docker compose -f ../compose.yml up -d

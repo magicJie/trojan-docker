@@ -24,6 +24,6 @@ done
 
 password=${PASSWORD} \
 domain=${DOMAIN} \
-docker-compose build
+docker compose build
 
 echo "finish ."
