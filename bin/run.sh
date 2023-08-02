@@ -5,4 +5,5 @@
 #------------------------------------------------
 CURPATH=$(cd "$(dirname "$0")"; pwd)
 cd $CURPATH
+docker compose -f ../compose.yml down
 docker compose -f ../compose.yml up -d

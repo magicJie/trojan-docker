@@ -13,7 +13,7 @@ services:
       - ./nginx/html:/usr/share/nginx/html
     ports:
       - "80:80"
-      - "8443:8443"
+      - "1443:1443"
     networks: 
       vpn:
         ipv4_address: 172.168.22.2
@@ -30,7 +30,7 @@ services:
     volumes:
       - ./cert/:/usr/local/etc/trojan/cert/
     ports:
-      - "443:443"
+      - "8443:8443"
     networks: 
       vpn:
         ipv4_address: 172.168.22.3
